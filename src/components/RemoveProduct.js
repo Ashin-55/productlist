@@ -54,11 +54,11 @@ const RemoveProduct = ({ setProducts, products }) => {
     for (let i = 0; i < inputFields.length; i++) {
       productCode.push = inputFields.productCode;
     }
-    const filterOutput = products?.filter((product) =>
-      productCode.includes(product.productCode)
-    );
-    console.log("the removable product details:", inputFields);
-    console.log("the removable product flterData:", filterOutput);
+    // const filterOutput = products?.filter((product) =>
+    //   productCode.includes(product.productCode)
+    // );
+    // console.log("the removable product details:", inputFields);
+    // console.log("the removable product flterData:", filterOutput);
     setInputFields([
       { id: uuidv4(), productCode: "", productName: "", quantity: "" },
     ]);
